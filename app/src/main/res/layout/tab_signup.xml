@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroudColor"
+    tools:context="com.example.hp.offermagnet.UserTab">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="28.5dp"
+        android:layout_alignLeft="@+id/firstNme"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/firstNme"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/logosignin" />
+
+
+    <EditText
+
+        android:id="@+id/firstNme"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/gender"
+        android:layout_alignStart="@+id/gender"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/sign_back_edit"
+        android:drawableLeft="@drawable/account"
+        android:ems="10"
+        android:hint="enter your name"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:textColor="#000" />
+
+    <EditText
+
+        android:id="@+id/phone"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sign_back_edit"
+        android:drawableLeft="@drawable/cellphoneiphone"
+        android:ems="10"
+        android:hint="enter your name"
+        android:inputType="phone"
+        android:paddingLeft="20dp"
+        android:textColor="#000" />
+
+    <EditText
+
+        android:id="@+id/gender"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/Age"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sign_back_edit"
+        android:drawableLeft="@drawable/gender_symbols"
+        android:ems="10"
+        android:hint="enter your name"
+        android:inputType="phone"
+        android:paddingLeft="20dp"
+        android:textColor="#000"
+       />
+
+    <EditText
+
+        android:id="@+id/lastNme"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+
+        android:layout_alignLeft="@+id/firstNme"
+        android:layout_alignStart="@+id/firstNme"
+        android:layout_below="@+id/firstNme"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sign_back_edit"
+        android:drawableLeft="@drawable/account"
+        android:ems="10"
+        android:hint="enter your name"
+        android:paddingLeft="20dp"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+
+
+        android:layout_alignLeft="@+id/lastNme"
+        android:layout_alignStart="@+id/lastNme"
+        android:layout_below="@+id/lastNme"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sign_back_edit"
+        android:cursorVisible="true"
+        android:drawableLeft="@drawable/lock_reset"
+        android:ems="10"
+        android:hint="enter your password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:textColor="#000" />
+
+    <EditText
+
+        android:id="@+id/Age"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/phone"
+        android:layout_alignStart="@+id/phone"
+        android:layout_below="@+id/phone"
+        android:background="@drawable/sign_back_edit"
+        android:drawableLeft="@drawable/circular_line_with_word_age_in_the_center"
+        android:ems="10"
+        android:hint="enter your age"
+        android:paddingLeft="15dp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+
+        android:id="@+id/signup"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+
+        android:layout_alignLeft="@+id/gender"
+        android:layout_alignStart="@+id/gender"
+        android:layout_below="@+id/gender"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/sign_back_button"
+        android:ems="10"
+        android:text="Sign Up"
+        android:textColor="@color/BackgroudColor" />
+
+
+</RelativeLayout>

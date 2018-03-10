@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroudColor"
+    tools:context="com.example.hp.offermagnet.UserTab">
+
+    <EditText
+
+        android:id="@+id/editText"
+        android:layout_width="281dp"
+        android:layout_height="54dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/sign_back_edit"
+        android:layout_marginBottom="14dp"
+        android:hint="enter your email"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/account"
+        android:paddingLeft="20dp"
+        android:layout_above="@+id/editText3"
+        android:layout_alignLeft="@+id/editText3"
+        android:layout_alignStart="@+id/editText3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="62.9dp"
+        android:layout_height="148.07dp"
+        android:src="@drawable/sign"
+        android:layout_above="@+id/imageView4"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+
+        android:id="@+id/editText3"
+        android:layout_width="281dp"
+        android:layout_height="54dp"
+        android:cursorVisible="true"
+        android:hint="enter your password"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:background="@drawable/sign_back_edit"
+        android:layout_marginBottom="21dp"
+        android:textColor="#000"
+        android:drawableLeft="@drawable/lock_reset"
+        android:paddingLeft="20dp"
+
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="281dp"
+        android:layout_height="54dp"
+android:textColor="@color/BackgroudColor"
+        android:background="@drawable/sign_back_button"
+        android:text="log in"
+        android:layout_marginBottom="53dp"
+        android:layout_above="@+id/imageView3"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="177.09dp"
+        android:layout_height="28.5dp"
+
+        android:src="@drawable/logosignin"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
