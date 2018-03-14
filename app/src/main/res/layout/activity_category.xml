@@ -19,14 +19,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/category"
-        android:layout_marginTop="50dp"
-        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
        >
 
-        <ImageButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/books"
+            android:background="@color/BackgroudColor"
+            android:drawableBottom="@drawable/books"
             android:id="@+id/books"/>
         <TextView
             android:layout_width="wrap_content"
@@ -37,11 +38,12 @@
             android:textAlignment="center"
             />
 
-        <ImageButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/computer"
-            android:layout_marginTop="30dp"
+            android:background="@color/BackgroudColor"
+            android:drawableBottom="@drawable/computer"
+            android:layout_marginTop="5dp"
             android:id="@+id/computer"/>
         <TextView
             android:layout_width="wrap_content"
@@ -50,12 +52,13 @@
             android:textColor="@color/colorFocus"
             android:textAlignment="center"
             />
-        <ImageButton
+        <Button
 
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:background="@drawable/shoses"
-            android:layout_marginTop="30dp"
+            android:drawableBottom="@drawable/shoses"
+            android:background="@color/BackgroudColor"
+            android:layout_marginTop="5dp"
             android:id="@+id/shoses"/>
         <TextView
             android:layout_width="wrap_content"
@@ -73,16 +76,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/category"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_toEndOf="@id/table1"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="30dp"
         android:layout_toRightOf="@id/table1">
 
-        <ImageButton
+        <Button
+            android:id="@+id/foods"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/foods"
-            android:id="@+id/foods"/>
+            android:background="@color/BackgroudColor"
+            android:drawableBottom="@drawable/foods"
+            />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -92,11 +97,12 @@
             android:textAlignment="center"
             />
 
-        <ImageButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/cellphone"
-            android:layout_marginTop="30dp"
+            android:drawableBottom="@drawable/cellphone"
+            android:background="@color/BackgroudColor"
+            android:layout_marginTop="5dp"
             android:id="@+id/cellphone"
             />
         <TextView
@@ -107,12 +113,13 @@
             android:textColor="@color/colorFocus"
             android:textAlignment="center"
             />
-        <ImageButton
+        <Button
 
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:background="@drawable/fashions"
-            android:layout_marginTop="30dp"
+            android:drawableBottom="@drawable/fashions"
+            android:background="@color/BackgroudColor"
+            android:layout_marginTop="5dp"
             android:id="@+id/fashions"/>
         <TextView
             android:layout_width="wrap_content"
@@ -129,15 +136,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/category"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="40dp"
         android:layout_toEndOf="@id/table2"
-        android:layout_marginLeft="50dp"
+        android:layout_marginLeft="30dp"
         android:layout_toRightOf="@id/table1">
 
-        <ImageButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/electronics"
+            android:background="@color/BackgroudColor"
+            android:drawableBottom="@drawable/electronics"
             android:id="@+id/electronics"
             />
         <TextView
@@ -149,11 +157,12 @@
             android:textAlignment="center"
             />
 
-        <ImageButton
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/officies"
-            android:layout_marginTop="30dp"
+            android:drawableBottom="@drawable/officies"
+            android:layout_marginTop="5dp"
+            android:background="@color/BackgroudColor"
             android:id="@+id/officies"
             />
         <TextView
@@ -164,12 +173,13 @@
             android:textColor="@color/colorFocus"
             android:textAlignment="center"
             />
-        <ImageButton
+        <Button
 
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:background="@drawable/collections"
-            android:layout_marginTop="30dp"
+            android:background="@color/BackgroudColor"
+            android:drawableBottom="@drawable/collections"
+            android:layout_marginTop="5dp"
             android:id="@+id/collections"/>
         <TextView
             android:layout_width="wrap_content"

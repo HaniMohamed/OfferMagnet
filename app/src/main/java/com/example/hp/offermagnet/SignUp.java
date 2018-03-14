@@ -1,5 +1,6 @@
 package com.example.hp.offermagnet;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -8,9 +9,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-/**
- * Created by hp on 25/02/2018.
- */
 
 public class SignUp  extends Fragment {
 Button btn;
@@ -19,9 +17,16 @@ Button btn;
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.tab_signup, container, false);
+        final View rootView = inflater.inflate(R.layout.tab_signup, container, false);
 
-    //    btn=(Button) rootView.f
+      btn=(Button) rootView.findViewById(R.id.signup);
+      btn.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+             Intent intent=new Intent(view.getContext() ,Category.class);
+              startActivity(intent);
+          }
+      });
 
         return rootView;
     }

@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.hp.offermagnet.NavDrawer">
+    tools:context="com.example.hp.offermagnet.NavDrawer"
+    android:background="@color/BackgroudColor">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -19,15 +20,66 @@
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="50dp"
+    android:visibility="invisible"
+    android:id="@+id/flow_layout">
+    <Button
+        android:layout_marginTop="20dp"
 
-    <include layout="@layout/content_nav_drawer" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/req"
+        android:background="@drawable/sign_back_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="100dp"
+        android:text="Make request"
+        android:textColor="@color/BackgroudColor"
+        android:textSize="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/req"
+        android:background="@drawable/sign_back_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp"
+        android:text="Make offer"
+        android:textSize="20dp"
+        android:textColor="@color/BackgroudColor"
+        android:id="@+id/offer"/>
+</RelativeLayout>
+
+
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
+        android:layout_gravity="bottom|center"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:backgroundTint="@color/NavigationDrawerColor"
+        app:srcCompat="@drawable/add_plus_button" />
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/BackgroudColor"
+        android:layout_gravity="bottom">
+        <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/BottomNavBar"
+            android:background="@drawable/white_gray_border_bottom"
+            app:menu="@menu/bottom_navigation_menus"
+            
+            >
+
+        </com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx>
+
+
+    </RelativeLayout>
 
 </android.support.design.widget.CoordinatorLayout>

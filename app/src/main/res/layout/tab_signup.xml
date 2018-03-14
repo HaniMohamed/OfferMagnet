@@ -7,6 +7,7 @@
     android:background="@color/BackgroudColor"
     tools:context="com.example.hp.offermagnet.UserTab">
 
+
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="wrap_content"
@@ -86,6 +87,22 @@
         android:hint="enter your name"
         android:paddingLeft="20dp"
         android:textColor="#000" />
+    <EditText
+
+        android:id="@+id/email"
+        android:layout_width="281dp"
+        android:layout_height="50dp"
+
+        android:layout_alignLeft="@+id/firstNme"
+        android:layout_alignStart="@+id/firstNme"
+        android:layout_below="@+id/lastNme"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/sign_back_edit"
+        android:drawableLeft="@drawable/email"
+        android:ems="10"
+        android:hint="enter your name"
+        android:paddingLeft="20dp"
+        android:textColor="#000" />
 
     <EditText
         android:id="@+id/password"
@@ -93,9 +110,9 @@
         android:layout_height="50dp"
 
 
-        android:layout_alignLeft="@+id/lastNme"
-        android:layout_alignStart="@+id/lastNme"
-        android:layout_below="@+id/lastNme"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:layout_below="@+id/email"
         android:layout_marginTop="10dp"
         android:background="@drawable/sign_back_edit"
         android:cursorVisible="true"
@@ -106,6 +123,8 @@
         android:paddingLeft="20dp"
         android:textColor="#000" />
 
+
+
     <EditText
 
         android:id="@+id/Age"
@@ -114,6 +133,7 @@
         android:layout_alignLeft="@+id/phone"
         android:layout_alignStart="@+id/phone"
         android:layout_below="@+id/phone"
+
         android:background="@drawable/sign_back_edit"
         android:drawableLeft="@drawable/circular_line_with_word_age_in_the_center"
         android:ems="10"
@@ -137,6 +157,7 @@
         android:ems="10"
         android:text="Sign Up"
         android:textColor="@color/BackgroudColor" />
+
 
 
 </RelativeLayout>
