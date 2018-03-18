@@ -30,6 +30,7 @@ boolean check=false;
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                check=!check;
                 if(check==true) {
                     rel.setVisibility(view.getVisibility());
                 }
