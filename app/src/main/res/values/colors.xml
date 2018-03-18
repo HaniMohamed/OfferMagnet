@@ -9,5 +9,6 @@
     <color name="BackgroudColor">#F9FBFF</color>
     <color name="NavigationDrawerColor">#295aef</color>
     <color name="colorWhite">#FFF</color>
+    <color name="colorText">#95989A</color>
 
 </resources>

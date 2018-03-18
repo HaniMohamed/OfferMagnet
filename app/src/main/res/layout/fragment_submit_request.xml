@@ -1,0 +1,205 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.offermagnet.SubmitRequestFragment"
+    android:background="@color/colorWhite">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+
+            android:id="@+id/layout1"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/layout_shape">
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/layout_shape"
+                android:gravity="center_vertical"
+                android:hint="Request Title"
+                android:inputType="text"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:textColorHint="#253041" />
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                style="@style/spinner_style"
+                android:layout_width="280dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/title"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:entries="@array/Category"
+                android:paddingLeft="18dp"
+                android:paddingRight="23dp"
+                android:pointerIcon="all_scroll"
+                android:spinnerMode="dropdown"
+
+                >
+
+            </Spinner>
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="280dp"
+                android:layout_height="135dp"
+
+                android:layout_below="@+id/spinnerCategory"
+                android:layout_marginBottom="25dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/layout_shape"
+                android:hint="Note"
+                android:inputType="textMultiLine"
+                android:paddingLeft="23dp"
+                android:paddingRight="23dp"
+                android:textColorHint="#253041" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layout1"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/layout_shape">
+
+            <TextView
+                android:id="@+id/textLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:text="Select Location"
+                android:textColor="@color/colorText" />
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textLocation"
+                android:layout_marginTop="21dp">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="28dp"
+                    android:src="@drawable/active_location" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center"
+                    android:text="Current Location"
+                    android:textColor="#253041" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="21dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear1"
+                android:id="@+id/linear2">
+                <SeekBar
+                    android:layout_marginLeft="25dp"
+                    android:id="@+id/barLocation"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:max="30"
+                    android:progress="15"
+
+                    />
+                <ImageButton
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="24dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/swap_btn"
+                    android:background="@drawable/layout_shape"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_below="@id/linear2"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+
+                >
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="28dp"
+                    android:src="@drawable/active_location" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="15 Kilo Way"
+                    android:textColor="#253041"
+                    android:id="@+id/textKilo"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="45dp"
+                android:text="Select Validate Date"
+                android:textColor="@color/colorText"
+                android:layout_below="@id/linear3"/>
+
+            <CalendarView
+                android:layout_width="280dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/textDate"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/calender"></CalendarView>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="32dp"
+                android:layout_below="@id/calender"
+                android:id="@+id/addAttachment"
+                android:background="@drawable/sign_back_button"
+                android:layout_marginTop="35.49dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="36.45dp"
+                android:textColorHint="@color/colorWhite"
+                android:hint="Add attachment"
+                />
+
+        </RelativeLayout>
+        <Button
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="330dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/layout2"
+            android:hint="Submit request"
+            android:background="@drawable/sign_back_button"
+            android:textColorHint="@color/colorWhite"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="38dp"
+            />
+    </RelativeLayout>
+
+
+</ScrollView>

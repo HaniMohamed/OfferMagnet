@@ -14,4 +14,16 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="Category">
+        <item name="category">Category</item>
+        <item name="Books">Books</item>
+        <item name="Foods">Foods</item>
+        <item name="Electronics">Electronics</item>
+        <item name="Computers">Computers</item>
+        <item name="Cellphones">Cellphones</item>
+        <item name="Offices">Offices</item>
+        <item name="Shoes">Shoes</item>
+        <item name="Fashions">Fashions</item>
+        <item name="Collections">Collections</item>
+    </string-array>
 </resources>

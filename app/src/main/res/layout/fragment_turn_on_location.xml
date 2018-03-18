@@ -61,7 +61,7 @@
 
 
             android:text="Turn on your location to track your
-bus realtime"
+            bus realtime"
             android:id="@+id/txt2loc"/>
 
         <Button
