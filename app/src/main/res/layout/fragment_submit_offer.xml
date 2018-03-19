@@ -170,7 +170,8 @@
                 android:layout_height="35dp"
                 android:layout_below="@id/textDate"
                 android:layout_marginLeft="25dp"
-                android:id="@+id/calender"></CalendarView>
+                android:id="@+id/calender"
+                android:firstDayOfWeek="7"></CalendarView>
             <Button
                 android:layout_width="200dp"
                 android:layout_height="32dp"
